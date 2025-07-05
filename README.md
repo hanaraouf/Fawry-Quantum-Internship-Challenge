@@ -67,7 +67,7 @@ Error: Old Cheese is expired
 
 ```java
 Customer customer = new Customer("Test Customer", 6000);
-class SampleShippableOnly extends ShippableProduct {
+abstract class SampleShippableOnly extends ShippableProduct {
     public SampleShippableOnly(String name, double price, int quantity, double weight) {
         super(name, price, quantity, weight);
     }
@@ -102,7 +102,7 @@ Error: Insufficient balance
 
 ```java
 Customer customer = new Customer("Test Customer", 500);
-class SampleBasicProduct extends AbstractProduct {
+abstract class SampleBasicProduct extends AbstractProduct {
     public SampleBasicProduct(String name, double price, int quantity) {
         super(name, price, quantity);
     }
