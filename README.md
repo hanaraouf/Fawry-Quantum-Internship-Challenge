@@ -27,21 +27,7 @@ checkout.checkout(customer, cart);
 **Customer Balance:** 500
 
 ### Output:
-```
-** shipment notice **
-2xCheese 400g
-1xBiscuits 700g
-Total package weight 1.1kg
-
-** Checkout receipt **
-2x Cheese    200
-1x Biscuits  150
----
-Subtotal    350
-Shipping    30
-Amount      380
-Customer balance: 120
-```
+<img width="638" alt="Screenshot 2025-07-08 at 9 51 07 PM" src="https://github.com/user-attachments/assets/2b993bf3-1c4a-4e14-b7ba-25e87bebe20f" />
 
 ---
 
@@ -58,9 +44,7 @@ checkout.checkout(customer, expiredCart);
 **Product:** Old Cheese (expired)
 
 ### Output:
-```
-Error: Old Cheese is expired
-```
+<img width="640" alt="Screenshot 2025-07-08 at 9 54 08 PM" src="https://github.com/user-attachments/assets/a9a4b1cb-0e30-4306-88b6-4802b0e9dbfa" />
 ---
 
 ## Case 2: Shippable, Non-Expirable Product
@@ -81,20 +65,8 @@ checkout.checkout(customer, shippableCart);
 **Product:** TV (shippable only)
 
 ### Output:
-```
-** shipment notice **
-1xTV 8000g
-Total package weight 8.0kg
 
-** Checkout receipt **
-1x TV    5000
----
-Subtotal    5000
-Shipping    30
-Amount      5030
-Error: Insufficient balance
-```
-(*if balance < 5030*)
+<img width="597" alt="Screenshot 2025-07-08 at 9 56 38 PM" src="https://github.com/user-attachments/assets/892c8a9f-0e5e-455c-bb42-936b0d50d7d5" />
 
 ---
 
@@ -116,15 +88,8 @@ checkout.checkout(customer, digitalCart);
 **Product:** Scratch Card (digital item)
 
 ### Output:
-```
-** Checkout receipt **
-2x Scratch Card    100
----
-Subtotal    100
-Shipping    0
-Amount      100
-Customer balance: 20
-```
+<img width="597" alt="Screenshot 2025-07-08 at 9 59 01 PM" src="https://github.com/user-attachments/assets/bffaf9ed-cca7-4877-b877-df49c9af85e0" />
+
 ---
 
 ## ℹ️ Notes
